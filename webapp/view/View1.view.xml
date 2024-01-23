@@ -1,0 +1,120 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="a.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:tnt="sap.tnt"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" showHeader="false">
+        <content>
+        <FlexBox class="topBar" alignItems="Center" justifyContent="SpaceBetween">
+
+        
+        <Image class="image " src="./image/icon.png" width="105%" height="100px"></Image>
+
+        
+
+        <HBox >
+        <core:Icon src="sap-icon://map" size="10%" class="colorWhite sapUiSmallMarginBottom largeFont topGap2"></core:Icon>
+        <VBox  class="sapUiSmallMarginBegin " >
+        <Text class="color1" text="Delivering to Hyderabad 500090"></Text>
+        <Text class="colorWhite" text="Update location" ></Text>
+        </VBox>
+        </HBox>
+        
+        
+
+        <HBox class="left-margin" >
+        <ComboBox id="comboBox" selectedKey="All" class="comboBox color1 height" width="100%">
+        <items>
+        <core:Item id="_IDGenItem1"  key="All" text="All"  ></core:Item>
+        </items>
+        </ComboBox>
+        <SearchField id="searchField" width="290%" placeholder="Serach Amazone.in" class="searchField height" >
+        </SearchField>
+        </HBox>
+        
+
+       
+        <HBox  >
+        <!-- <Image class="image " src="./image/flag.png" width="50%" height=""></Image> -->
+         <Text text="EN"  class="sapUiSmallMarginBegin colorWhite right"></Text>
+        <core:Icon src="sap-icon://megamenu" size="60%" class="colorWhite"></core:Icon>
+        </HBox>
+
+        <VBox  class="sapUiSmallMarginBegin" >
+        <Text class="colorWhite" text="Hello,sign in"></Text>
+        <HBox  >
+        <Text class="colorWhite bold" text="Account and Lists" ></Text>
+        <core:Icon src="sap-icon://megamenu" size="60%" class="colorWhite"></core:Icon>
+        </HBox>
+        
+        </VBox>
+
+        <VBox  class="sapUiSmallMarginBegin" >
+        <Text class="colorWhite" text="Return"></Text>
+        <Text class="colorWhite" text=" Orders" ></Text>
+        </VBox>
+
+        <HBox  class="cart" >
+        <core:Icon src="sap-icon://cart"  class="colorWhite largeFont"></core:Icon>
+        <Text class="colorWhite" text="Cart" ></Text>
+        </HBox>
+
+
+        </FlexBox>
+        <FlexBox class="secondBar" alignItems="Center" justifyContent="SpaceBetween">
+
+        <FlexBox  class="all" justifyContent="Center" alignItems="Center">
+        <core:Icon src="sap-icon://menu2" size="60%" class="colorWhite bold" press=".onCollapseExpandPress"></core:Icon>
+        <Text text="All"  class="sapUiTinyMarginBegin colorWhite bold"></Text>
+        </FlexBox>
+        <Text text="Fresh"  class="colorWhite bold"></Text>
+        <Text text="Amazon miniTV"  class="colorWhite bold"></Text>
+        <Text text="Sell"  class="colorWhite bold"></Text>
+        <Text text="Best Sellers"  class="colorWhite bold"></Text>
+        <Text text="Today's Deals"  class="colorWhite bold"></Text>
+        <Text text="Mobiles"  class="colorWhite bold"></Text>
+        <Text text="Electronics"  class="colorWhite bold"></Text>
+        <FlexBox justifyContent="Center" alignItems="Center">
+        <Text text="Prime"  class="sapUiTinyMarginBegin colorWhite bold"></Text>
+        <core:Icon src="sap-icon://megamenu" size="60%" class="colorWhite bold"></core:Icon>
+        </FlexBox>
+        <Text text="Customer Service"  class="colorWhite bold"></Text>
+        <Text text="Gift Ideas"  class="colorWhite bold"></Text>
+        <Text text="New Releases"  class="colorWhite bold"></Text>
+        <Text text="Home &amp; kitchen"  class="colorWhite bold"></Text>
+        <Text text="Fashion"  class="colorWhite bold"></Text>
+        <Text text="Amazon Pay"  class="colorWhite bold"></Text>
+        <Text text="Computers"  class="colorWhite bold"></Text>    
+        <Text text="Books"  class="colorWhite bold"></Text>    
+        <Text text="Car Motorbike"  class="colorWhite bold"></Text>    
+        <Text text="Toys &amp; Games"  class="colorWhite bold"></Text>    
+
+        </FlexBox>
+        
+        <tnt:SideNavigation id="sideNavigation" selectedKey="subItem3" class="sideNav">
+		<tnt:NavigationList>
+			<tnt:NavigationListItem text="Item 1" icon="sap-icon://employee">
+				<tnt:NavigationListItem text="Sub Item 1" />
+				<tnt:NavigationListItem text="Sub Item 2" />
+				<tnt:NavigationListItem text="Sub Item 3" id="subItem3" key="subItem3" />
+				<tnt:NavigationListItem text="Sub Item 4" />
+			</tnt:NavigationListItem>
+			<tnt:NavigationListItem text="Item 2" icon="sap-icon://building">
+				<tnt:NavigationListItem text="Sub Item 1" />
+				<tnt:NavigationListItem text="Sub Item 2" />
+				<tnt:NavigationListItem text="Sub Item 3" />
+				<tnt:NavigationListItem text="Sub Item 4" />
+			</tnt:NavigationListItem>
+		</tnt:NavigationList>
+		<tnt:fixedItem>
+			<tnt:NavigationList>
+				<tnt:NavigationListItem text="Item 1" icon="sap-icon://employee" />
+				<tnt:NavigationListItem text="Item 2" icon="sap-icon://building" />
+				<tnt:NavigationListItem text="Item 3" icon="sap-icon://card" />
+			</tnt:NavigationList>
+		</tnt:fixedItem>
+	</tnt:SideNavigation>
+        
+        
+        </content>
+    </Page>
+</mvc:View>
