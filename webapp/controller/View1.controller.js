@@ -17,11 +17,16 @@ sap.ui.define([
                 var bExpanded = oSideNavigation.getVisible();
 
                 oSideNavigation.setVisible(!bExpanded);
+                const master = that.byId("master");
                 if(!bExpanded){
                     that.byId("all").addStyleClass("select");
+                    master.showMaster();
                 }else{
                     that.byId("all").removeStyleClass("select");
+                    master.hideMaster();
                 }
+                
+
             },
 
             onHideShowSubItemPress: function () {
