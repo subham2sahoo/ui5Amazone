@@ -1,7 +1,7 @@
 .topBar {
     margin-top: 0.01rem;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
     background-color: #2c3e50;
     height: 7% !important;
 }
@@ -18,80 +18,112 @@
 }
 
 .colorWhite {
-    color: white !important;
+    color: white;
 }
 
-/* .comboBox {
-    width: 20%;
-    margin-right: 0px !important;
-} */
 
-/* .comboBox .sapMInputBaseContentWrapper {
-    background-color: #bdc3c7 !important;
-} */
-
-/* .searchField {
-    margin-left: 0px !important;
-} */
-
-.topGap{
+.topGap {
     margin-top: 8%;
     margin-left: 0 !important;
-    left:8%;
+    left: 8%;
 
 }
 
-.topGap2{
+.topGap2 {
     top: 35%;
-    left:90%;
+    left: 90%;
     margin-left: 0 !important;
 
 }
 
-.largeFont{
+.largeFont {
     font-size: larger !important;
 }
 
 .height .sapMInputBaseContentWrapper,
-.height form{
-    height:120%!important;
+.height form {
+    height: 120% !important;
 }
 
 .searchField .sapMSFS {
     background-color: #f4b278;
 }
 
-.left-margin{
+.left-margin {
     margin-right: 20%;
 }
 
-.bold{
-    font-size: medium;
-    font-weight: 400 !important;
+.bold {
+    font-size: 85%;
+    font-weight: 5%;
 }
-.right{
+
+.right {
     right: 2.5%;
 }
 
-.secondBar{
+.secondBar {
     padding-left: 2%;
     padding-right: 2%;
     background-color: #385a7b;
-    height: 4% !important;
+    height: 4.5% !important;
 }
 
-.inline{
+.inline {
     display: inline-block !important;
 }
 
-.cart > .sapMFlexItem{
+.cart>.sapMFlexItem {
     font-size: xx-large;
 }
-.all > .sapMFlexItem{
+
+.all>.sapMFlexItem {
     font-size: larger;
 }
 
-.sideNav{
+.sideNav {
     z-index: 50;
-    height: 89% !important;
+    height: 88.5% !important;
+}
+
+.serchFieldFlex>.sapMFlexBoxBGTransparent {
+    width: 100% !important;
+}
+
+
+.signIn,
+.signIn .sapTntNavLIItem,
+.signIn .sapTntNavLIItem  span{
+    background-color: #2c3e50 !important;
+    color: white !important;
+}
+
+.sideNav a span{
+    font-size: medium;
+}
+
+.select .sapUiIcon{
+  color:#aaa69d;
+}
+
+.extraLarge{
+    font-size: larger !important;
+}
+
+.hover{
+    border: 0.3px solid ;
+    border-color: transparent;
+   }
+
+.hover:hover{
+ border: 0.3px solid white ;
+}
+
+.hover2{
+    border: 0.3px solid ;
+    border-color: transparent;
+   }
+
+.hover2:hover{
+ border: 0.3px solid white ;
 }

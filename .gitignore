@@ -1,0 +1,7 @@
+node_modules
+annotations.cds
+package-lock.json
+package.json
+ui5-deploy.yaml
+ui5.yaml
+xs-app.json
