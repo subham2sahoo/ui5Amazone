@@ -5,6 +5,7 @@
     displayBlock="true"
     xmlns:tnt="sap.tnt"
     xmlns="sap.m"
+    xmlns:f="sap.f"
 >
     <Page
         id="page"
@@ -70,7 +71,6 @@
                     width="20%"
                 >
                     <HBox class="hover">
-                        
                         <Text
                             text="EN"
                             class="sapUiSmallMarginBegin colorWhite "
@@ -228,79 +228,143 @@
                     class="colorWhite bold hover2"
                 />
             </FlexBox>
-            
-                <SplitContainer id="master" mode="HideMode">
-		<masterPages>
-            <tnt:SideNavigation
-                id="sideNavigation"
-                width="100%"
-                class="sideNav"
-                itemSelect=""
-                visible="false"
+
+            <SplitContainer
+                id="master"
+                mode="HideMode"
             >
-            
-                <tnt:NavigationList>
-                    <tnt:NavigationListItem
-                        text="Trending"
-                        icon=""
+                <masterPages>
+                    <tnt:SideNavigation
+                        id="sideNavigation"
+                        width="100%"
+                        class="sideNav"
+                        itemSelect=""
+                        visible="false"
                     >
-                        <tnt:NavigationListItem text="Best Sellers" />
-                        <tnt:NavigationListItem text="New Releases" />
-                        <tnt:NavigationListItem text="Movers and Shakers"/>
-                    </tnt:NavigationListItem>
-                    <tnt:NavigationListItem
-                        text="Digital Content and Devices"
-                        icon=""
-                    >
-                        <tnt:NavigationListItem text="Echo &amp; Alexa" />
-                        <tnt:NavigationListItem text="Fire Tv" />
-                        <tnt:NavigationListItem text="Kindle E-Readers &amp; eBooks" />
-                        <tnt:NavigationListItem text="Audible Audiobooks" />
-                        <tnt:NavigationListItem text="Amazone Prime Video" />
-                        <tnt:NavigationListItem text="Amazone Prime Music" />
-                    </tnt:NavigationListItem>
+                        <tnt:NavigationList>
+                            <tnt:NavigationListItem
+                                text="Trending"
+                                icon=""
+                            >
+                                <tnt:NavigationListItem text="Best Sellers" />
+                                <tnt:NavigationListItem text="New Releases" />
+                                <tnt:NavigationListItem
+                                    text="Movers and Shakers"
+                                />
+                            </tnt:NavigationListItem>
+                            <tnt:NavigationListItem
+                                text="Digital Content and Devices"
+                                icon=""
+                            >
+                                <tnt:NavigationListItem
+                                    text="Echo &amp; Alexa"
+                                />
+                                <tnt:NavigationListItem text="Fire Tv" />
+                                <tnt:NavigationListItem
+                                    text="Kindle E-Readers &amp; eBooks"
+                                />
+                                <tnt:NavigationListItem
+                                    text="Audible Audiobooks"
+                                />
+                                <tnt:NavigationListItem
+                                    text="Amazone Prime Video"
+                                />
+                                <tnt:NavigationListItem
+                                    text="Amazone Prime Music"
+                                />
+                            </tnt:NavigationListItem>
 
-                    
-                    <tnt:NavigationListItem
-                        text="Shop by Category"
-                        icon=""
-                    >
-                        <tnt:NavigationListItem text="Mobiles, Computers" />
-                        <tnt:NavigationListItem text="TV Appliances" />
-                        <tnt:NavigationListItem text="Kindle E-Readers &amp; eBooks" />
-                        <tnt:NavigationListItem text="Men's Fashion" />
-                        <tnt:NavigationListItem text="Women's Fashion" />
-                        <tnt:NavigationListItem text="Amazone Prime Music" />
-                    </tnt:NavigationListItem>
+                            <tnt:NavigationListItem
+                                text="Shop by Category"
+                                icon=""
+                            >
+                                <tnt:NavigationListItem
+                                    text="Mobiles, Computers"
+                                />
+                                <tnt:NavigationListItem text="TV Appliances" />
+                                <tnt:NavigationListItem
+                                    text="Kindle E-Readers &amp; eBooks"
+                                />
+                                <tnt:NavigationListItem text="Men's Fashion" />
+                                <tnt:NavigationListItem
+                                    text="Women's Fashion"
+                                />
+                                <tnt:NavigationListItem
+                                    text="Amazone Prime Music"
+                                />
+                            </tnt:NavigationListItem>
 
-                    <tnt:NavigationListItem
-                        text="Programs &amp; Features"
-                        icon=""
-                    >
-                        <tnt:NavigationListItem text="Amazone Pay" />
-                        <tnt:NavigationListItem text="Gift Cards &amp; Mobile Recharges" />
-                        <tnt:NavigationListItem text="Amazone Lunchpad" />
-                        <tnt:NavigationListItem text="Handloom &amp; Handcrafts" />
-                    </tnt:NavigationListItem>
-                    
-                </tnt:NavigationList>
+                            <tnt:NavigationListItem
+                                text="Programs &amp; Features"
+                                icon=""
+                            >
+                                <tnt:NavigationListItem text="Amazone Pay" />
+                                <tnt:NavigationListItem
+                                    text="Gift Cards &amp; Mobile Recharges"
+                                />
+                                <tnt:NavigationListItem
+                                    text="Amazone Lunchpad"
+                                />
+                                <tnt:NavigationListItem
+                                    text="Handloom &amp; Handcrafts"
+                                />
+                            </tnt:NavigationListItem>
+                        </tnt:NavigationList>
 
+                        <tnt:fixedItem>
+                            <tnt:NavigationList class="largeFont signIn">
+                                <tnt:NavigationListItem
+                                    text="Hello,sign in"
+                                    icon="sap-icon://employee"
+                                    class="largeFont signIn"
+                                />
+                            </tnt:NavigationList>
+                        </tnt:fixedItem>
+                    </tnt:SideNavigation>
+                </masterPages>
+                <detailPages>
+                <FlexBox class="mainFlex" width="100%"  displayInline="true" justifyContent="Center" alignItems="Start" renderType="Bare">
+               <!-- <VBox class="shadow" height="45%" width="80%">
+                    <HBox class="shadow1" height="40%" width="100%"></HBox>
+                    <HBox class="shadow2" height="40%" width="100%"></HBox>
+                    <HBox class="shadow3" height="20%" width="100%"></HBox>
+               </VBox> -->
                 
-                
-                <tnt:fixedItem >
-                    <tnt:NavigationList class="largeFont signIn">
-                        <tnt:NavigationListItem
-                            text="Hello,sign in"
-                            icon="sap-icon://employee"
-                            class="largeFont signIn"
-                        />
-                    </tnt:NavigationList>
-                </tnt:fixedItem>
-            </tnt:SideNavigation> 
-            </masterPages>
-        <detailPages >
-        </detailPages>
-        </SplitContainer>
+                            <Carousel
+                                id="car"
+                                class="car"
+                                showPageIndicator="false"
+                                height="75%" width="80%"
+                                loop="true"
+                            >
+                                <Image
+                                    height="100%"
+                                    src="https://images-eu.ssl-images-amazon.com/images/G/31/2024/Gateway/January/BAU/Antifog_3000x1200._CB584948772_.jpg"
+                                    
+                                />
+                                <Image
+                                height="100%"
+                                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/Nov/One/Deals-PC-3000-Unrec-Onecard._CB571754517_.jpg"
+                                    alt="Example picture of USB flash drive"
+                                />
+                                <Image
+                                height="100%"
+                                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/jan24atf/unrec/citi/pc-1_2x._CB584618827_.jpg"
+                                    
+                                />
+                                <Image
+                                height="100%"
+                                    src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/ATFGW/Winter_Blankets_GW_PC_3000x1200_UNREC._CB584967333_.jpg"
+                                    
+                                />
+                            </Carousel>
+                </FlexBox>
+                <FlexBox class="content" direction="Column">
+                <FlexBox direction="Row"></FlexBox>
+                <FlexBox direction="Row"></FlexBox>
+                </FlexBox>
+                </detailPages>
+            </SplitContainer>
         </content>
     </Page>
 </mvc:View>
